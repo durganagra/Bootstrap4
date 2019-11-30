@@ -34,8 +34,10 @@
                 </ul>
                 <span class="navbar-text">
                     <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login</a>
+                        <span class="fa fa-sign-in"></span> <button id="myBtn1">Login</button></a>
                 </span>
+
+
             </div>
 
         </div>
@@ -43,12 +45,15 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="modal-content ">
+                <div class="modal-header ">
                     <h4 class="modal-title">Login </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+
+
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="myModal1">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -93,8 +98,9 @@
                 </div>
                 <div>
                     <div class="col-3 col-sm align-self-center">
-                        <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal"
-                            data-target="#myModal">Reserve Table</a>
+                        <!-- <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal"
+                            data-target="#myModal">Reserve Table</a> -->
+                        <button type="button" class="btn btn-info btn-lg btn-warning" id="myBtn">Reserve Table</button>
 
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -142,47 +148,44 @@
 
                                                     <div class="form-group col-sm-2">
                                                         <div class="form-group col-sm-2"> <button type="button"
-                                                                class="btn btn-danger active" >non-smoking</button> </div>
-                                                       
+                                                                class="btn btn-danger active">non-smoking</button>
+                                                        </div>
+
 
                                                     </div>
                                                     <div class=" form-group col-sm-3"> </div>
                                                     <div class=" form-group col-sm-2">
-                                                            <button type="button" class="btn btn-success">Smoking</button>
+                                                        <button type="button" class="btn btn-success">Smoking</button>
                                                     </div>
-                                                      
-                                                    </div>
-                                                    <div class="form-row">
-                                                        <h class="heading">Date and Time</h>
-                                                        <div class="form-group col-sm-0.5"></div>
-                                                        <div class="form-group col-sm-4">
-                                                            <input type="email"
-                                                                class="form-control form-control-sm mr-1"
-                                                                id="exampleInputDate" placeholder="Date">
-                                                        </div>
-                                                        <div class="form-group col-sm-0.5"></div>
-                                                        <div class="form-col col-sm-4">
-                                                            <input type="password"
-                                                                class="form-control form-control-sm mr-1"
-                                                                id="exampleInputTime" placeholder="Time">
-                                                        </div>
-                                                        <div class="form-group col-sm-1"></div>
-                                                    </div>
-                                                    <div class="form-row">
-                                                        <h>Date and Time</h>
-                                                        <div class="form-group col-sm-0.5"></div>
-                                                        <div class="form-group col-sm-2">
-                                                            <button type="button"
-                                                                class="btn btn-secondary">Cancel</button>
-                                                        </div>
-                                                        <div class="form-group col-sm-1"></div>
-                                                        <div class="form-group col-sm-2">
-                                                            <button type="button"
-                                                                class="btn btn-primary">Reserve</button>
-                                                        </div>
 
-                                                    </div>
                                                 </div>
+                                                <div class="form-row">
+                                                    <h class="heading">Date and Time</h>
+                                                    <div class="form-group col-sm-0.5"></div>
+                                                    <div class="form-group col-sm-4">
+                                                        <input type="email" class="form-control form-control-sm mr-1"
+                                                            id="exampleInputDate" placeholder="Date">
+                                                    </div>
+                                                    <div class="form-group col-sm-0.5"></div>
+                                                    <div class="form-col col-sm-4">
+                                                        <input type="password" class="form-control form-control-sm mr-1"
+                                                            id="exampleInputTime" placeholder="Time">
+                                                    </div>
+                                                    <div class="form-group col-sm-1"></div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <h>Date and Time</h>
+                                                    <div class="form-group col-sm-0.5"></div>
+                                                    <div class="form-group col-sm-2">
+                                                        <button type="button" class="btn btn-secondary">Cancel</button>
+                                                    </div>
+                                                    <div class="form-group col-sm-1"></div>
+                                                    <div class="form-group col-sm-2">
+                                                        <button type="button" class="btn btn-primary">Reserve</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
                                         </form>
 
                                     </div>
@@ -289,14 +292,14 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
                     <div class="btn-group" id="carouselButton">
-                            <button class="btn btn-danger btn-sm" id="carousel-pause">
-                                <span class="fa fa-pause"></span>
-                            </button>
-                            <button class="btn btn-danger btn-sm" id="carousel-play">
-                                <span class="fa fa-play"></span>
-                            </button>
-                        </div>
-           
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -400,16 +403,30 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-            $(document).ready(function(){
-                $("#mycarousel").carousel( { interval: 2000 } );
-                $("#carousel-pause").click(function(){
-                    $("#mycarousel").carousel('pause');
-                });
-                $("#carousel-play").click(function(){
-                    $("#mycarousel").carousel('cycle');
-                });
+        $(document).ready(function () {
+            $("#mycarousel").carousel({ interval: 2000 });
+            $("#carousel-pause").click(function () {
+                $("#mycarousel").carousel('pause');
             });
-        </script>
+            $("#carousel-play").click(function () {
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                $("#myModal").modal();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#myBtn1").click(function () {
+                $("#loginModal").modal();
+            });
+        });
+    </script>
 </body>
 
 </html>

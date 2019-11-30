@@ -2,6 +2,7 @@ $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
+$background-modal:#512DA8;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -45,7 +46,12 @@ body{
 .navbar-dark {
      background-color: $background-dark;
 }
-
+.modal-body {
+    background-color: $background-light;
+}
+.modal-header {
+    background-color: $background-dark; 
+}
 .tab-content {
     border-left: 1px solid $lt-gray;
     border-right: 1px solid $lt-gray;
@@ -72,3 +78,4 @@ body{
     bottom: 0px;
     z-index: 1;
 }
+
